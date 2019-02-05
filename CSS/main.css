@@ -1,4 +1,22 @@
-body {
-  background: #EEE;
-  font-size: rgba(255, 0, 0, 0.5); 300 px
-}
+<style >
+  body
+  {
+    background-color: white;
+  }
+  nav
+  {
+    display: block;
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+  h1
+  {
+    text-align: center;
+    font-size: 2em;
+    font-style: oblique;
+    color; Red;
+  }
+</style>

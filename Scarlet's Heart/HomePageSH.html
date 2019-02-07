@@ -4,13 +4,24 @@
 		<title> Scarlet's Heart </title>
 		<a href="css/main.css" rel="stylesheet"></a>
 		<style>
-		.fit {
-  max-width: 99%;
-  max-height: 99%;
-}
-</style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 	</head>
 	<body>
-		<img class="fit" src="SH Cover.png"alt="Scarlet's Heart Cover">
+		<div class="imgbox">
+    <img class="center-fit" src="SH Cover.png"alt="Scarlet's Heart Cover">
+		</div>
 	</body>
 </html>

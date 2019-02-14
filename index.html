@@ -3,10 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 body {
   font-family: "Lato", sans-serif;
 }
-
+  .fit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -30,7 +36,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #000000;
 }
 
 .sidenav .closebtn {
@@ -57,8 +63,8 @@ body {
   <a href="#">Contact</a>
 </div>
 
-<h2>Animated Sidenav Example</h2>
-<p>Click on the element below to open the side navigation menu.</p>
+<h1>Phuong's Assignments</h1>
+<img class="fit" src="anime pro pic.jpg">
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 <script>
@@ -70,6 +76,3 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-
-</body>
-</html>

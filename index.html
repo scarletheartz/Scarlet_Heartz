@@ -3,16 +3,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 body {
-  font-family: "The Girl Next Door"; font-size: 22px;
+  font-family: "Lato", sans-serif;
 }
-  .fit {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -36,7 +30,7 @@ body {
 }
 
 .sidenav a:hover {
-  color: #000000;
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
@@ -63,10 +57,9 @@ body {
   <a href="#">Contact</a>
 </div>
 
-
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-<h1>Phuong's Assignments</h1>
-<img class="fit" src="anime pro pic.jpg">
+<h2>Animated Sidenav Example</h2>
+<p>Click on the element below to open the side navigation menu.</p>
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -76,5 +69,6 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
 </body>
 </html>

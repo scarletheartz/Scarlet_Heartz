@@ -30,32 +30,165 @@
     		font-style: Oblique;
     		color:Red
     	}
-    </style>
-	</head>
-	<body>
-		<a href="Prologue.html"> Prologue</a>
-    <a href="Chapter1.html">Chapter 1</a>
-    <a href="Chapter2.html">Chapter 2</a>
-    <a href="Chapter3.html">Chapter 3</a>
-    <a href="Chapter4.html">Chapter 4</a>
-    <a href="Chapter5.html">Chapter 5</a>
-    <a href="Chapter6.html">Chapter 6</a>
-    <a href="Chapter7.html">Chapter 7</a>
-    <a href="Chapter8.html">Chapter 8</a>
-    <a href="Chapter9.html">Chapter 9</a>
-    <a href="Chapter10.html">Chapter 10</a>
-    <a href="Chapter11.html">Chapter 11</a>
-    <a href="Chapter12.html">Chapter 12</a>
-    <a href="Chapter13.html">Chapter 13</a>
-    <a href="Chapter14.html">Chapter 14</a>
-    <a href="Chapter15.html">Chapter 15</a>
-    <a href="Chapter16.html">Chapter 16</a>
-    <a href="Chapter17.html">Chapter 17</a>
-    <a href="Chapter18.html">Chapter 18</a>
-    <a href="Chapter19.html">Chapter 19</a>
-    <a href="Chapter20.html">Chapter 20</a>
-    <a href="Chapter21.html">Chapter 21</a>
-    <a href="Chapter22.html">Chapter 22</a>
-    <a href="Chapter23.html">Chapter 23</a>
+			.sidenav {
+			  height: 100%;
+			  width: 160px;
+			  position: fixed;
+			  z-index: 1;
+			  top: 0;
+			  left: 0;
+			  background-color: #111;
+			  overflow-x: hidden;
+			  padding-top: 20px;
+			}
+
+			.sidenav a {
+			  padding: 6px 8px 6px 16px;
+			  text-decoration: none;
+			  font-size: 25px;
+			  color: #818181;
+			  display: block;
+			}
+
+			.sidenav a:hover {
+			  color: #f1f1f1;
+			}
+
+			.main {
+			  margin-left: 160px; /* Same as the width of the sidenav */
+			  font-size: 28px; /* Increased text to enable scrolling */
+			  padding: 0px 10px;
+			}
+
+			@media screen and (max-height: 450px) {
+			  .sidenav {padding-top: 15px;}
+			  .sidenav a {font-size: 18px;}
+			}
+			.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+			</head>
+			<body>
+
+			<div class="sidenav">
+			  <a href="E0/index.html">Exercise 0</a>
+			  <a href="E1/index.html">Excercise 1</a>
+			  <a href="E2/index.html">Excercise 2</a>
+			  <a href="E3/index.html">Excercise 3</a>
+			  <a href="E4/index.html">Excercise 4</a>
+			  <a href="E5/index.html">Excercise 5</a>
+			  <a href="E6/index.html">Excercise 6</a>
+			  <a href="E7/index.html">Excercise 7</a>
+			  <a href="E8/index.html">Excercise 8</a>
+			  <a href="E9/index.html">Excercise 9</a>
+			  <a href="E10/index.html">Excercise 10</a>
+			  <a href="Scarlet's Heart/HomePageSH.html">Project 1</a>
+			  <a href="E11/index.html">Excercise 11</a>
+			  <a href="E12/index.html">Excercise 12</a>
+			  <a href="E13/index.html">Excercise 13</a>
+			  <a href="E14/index.html">Excercise 14</a>
+			  <a href="E15/index.html">Excercise 15</a>
+			  <a href="">Project 2</a>
+			  <a href="E16/index.html">Excercise 16</a>
+			  <a href="">Project 3</a>
+			  <a href="E17/index.html">Excercise 17</a>
+			  <a href="E18/index.html">Excercise 18</a>
+			  <a href="E19/index.html">Excercise 19</a>
+			  <a href="">Project 4</a>
+			  <a href="">Project 5</a>
+			</div>
+
+			<div class="main">
+				<div class="navbar">
+					<div class="dropdown">
+						<button class="dropbtn">Table of Contents
+							<i class="fa fa-caret-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<a href="Prologue.html"> Prologue</a>
+					    <a href="Chapter1.html">Chapter 1</a>
+					    <a href="Chapter2.html">Chapter 2</a>
+					    <a href="Chapter3.html">Chapter 3</a>
+					    <a href="Chapter4.html">Chapter 4</a>
+					    <a href="Chapter5.html">Chapter 5</a>
+					    <a href="Chapter6.html">Chapter 6</a>
+					    <a href="Chapter7.html">Chapter 7</a>
+					    <a href="Chapter8.html">Chapter 8</a>
+					    <a href="Chapter9.html">Chapter 9</a>
+					    <a href="Chapter10.html">Chapter 10</a>
+					    <a href="Chapter11.html">Chapter 11</a>
+					    <a href="Chapter12.html">Chapter 12</a>
+					    <a href="Chapter13.html">Chapter 13</a>
+					    <a href="Chapter14.html">Chapter 14</a>
+					    <a href="Chapter15.html">Chapter 15</a>
+					    <a href="Chapter16.html">Chapter 16</a>
+					    <a href="Chapter17.html">Chapter 17</a>
+					    <a href="Chapter18.html">Chapter 18</a>
+					    <a href="Chapter19.html">Chapter 19</a>
+					    <a href="Chapter20.html">Chapter 20</a>
+					    <a href="Chapter21.html">Chapter 21</a>
+					    <a href="Chapter22.html">Chapter 22</a>
+					    <a href="Chapter23.html">Chapter 23</a>
+						</div>
+				  </div>
+				</div>
+			</div>
 	</body>
 </html>

@@ -1,22 +1,166 @@
-<style >
-  body
-  {
-    background-color: white;
-  }
-  nav
-  {
-    display: block;
-    background-color: white;
-    border: 2px solid black;
-    width: 100%;
-    text-align: center;
-    margin: auto;
-  }
-  h1
-  {
-    text-align: center;
-    font-size: 2em;
-    font-style: oblique;
-    color; Red;
-  }
-</style>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+body {
+  margin: -100px;
+  padding: 0;
+  width: 140%;
+}
+div {
+  width: 200px;
+  height: 200px;
+  float: left;
+  /* border-radius: 100%; */
+}
+.pattern1 .first {
+  background-color: none;
+  margin: -80px;
+  opacity: .2;
+  border-radius: 100%;
+  border: 40px solid black;
+}
+.pattern1 .second {
+  background-color: none;
+  margin: -80px;
+  opacity: .4;
+  border-radius: 100%;
+  border: 40px solid black;
+}
+.pattern1 .third {
+  background-color: none;
+  margin: -80px;
+  opacity: .6;
+  border-radius: 100%;
+  border: 40px solid black;
+}
+.pattern1 .fourth {
+  background-color: none;
+  margin: -80px;
+  opacity: .8;
+  border-radius: 100%;
+  border: 40px solid black;
+}
+.pattern1 .fifth {
+  background-color: none;
+  margin: -80px;
+  opacity: 1;
+  border-radius: 100%;
+  border: 40px solid black;
+}
+.pattern2 .first {
+  background-color: green;
+  margin: -40px;
+  opacity: .8;
+}
+.pattern2 .second {
+  background-color: none;
+  margin: -20px;
+  opacity: .8;
+  border-radius: 100%;
+  border: 10px solid purple;
+}
+.pattern2 .third {
+  background-color: orange;
+  margin: -50px;
+  opacity: .4;
+  border: 10px solid black;
+}
+.pattern2 .fourth {
+  background-color: cyan;
+  margin: 0px;
+}
+.pattern2 .fifth {
+  background-color: blue;
+  margin: -10px;
+  opacity: .2;
+  border-radius: 25px;
+}
+/* div:nth-child(3n+1) {
+  background-color: cyan;
+}
+div:nth-child(3n+2) {
+  background-color: magenta;
+}
+div:nth-child(3n+3) {
+  background-color: yellow;
+} */

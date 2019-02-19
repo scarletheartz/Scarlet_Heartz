@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Phuong Le</title>
-    <a href="css/main.css" rel="stylesheet"></a>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<style>
-		.fit {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
 }
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: black;
-  position: fixed;
+
+.sidenav {
   height: 100%;
-  overflow: auto;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.sidebar a {
-  display: block;
-  color: white;
-  padding: 16px;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
 }
 
-.sidebar a.active {
-  background-color: (255, 36, 0);
-  color: white;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.sidebar a:hover:not(.active) {
-  background-color: (255, 36, 0);
-  color: (255, 36, 0);
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
 }
 
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
 </style>
-  </head>
-  <body>
-    <h1 class="myHeader"> Phuong's Assignments </h1>
-    <div class="sidebar">
-  	  <a class="active" href="/index.html">Home</a>
+</head>
+<body>
+
+  <div class="sidenav">
   	  <a href="/E0/index.html">Exercise 0</a>
-      <a href="E1/index.html">Excercise 1</a>
+      <a href="/E1/index.html">Excercise 1</a>
       <a href="/E2/index.html">Excercise 2</a>
       <a href="/E3/index.html">Excercise 3</a>
       <a href="/E4/index.html">Excercise 4</a>
@@ -91,9 +71,9 @@ div.content {
       <a href="/E19/index.html">Excercise 19</a>
       <a href="/">Project 4</a>
       <a href="/">Project 5</a>
-  	</div>
+    </div>
 
-    <div class="content">
+    <div class="main">
       <h1>Frequently Used Website</h1>
       <img src="www.nhaccuatui.com_.jpg">
       <h1>Good Website</h1>
@@ -101,5 +81,6 @@ div.content {
       <h1>Bad Website</h1>
       <img src="arngren.net_ (1).jpg">
     </div>
-</body>
-</html>
+
+    </body>
+    </html>

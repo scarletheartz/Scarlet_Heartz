@@ -73,27 +73,33 @@ body {
 }
 /*Tennis Court*/
 .TC {
-  width: 360px;
-  height: 720px;
-  margin: 20px;
+width: 1000px;
+border: 10px; solid: #000000;
 }
-.topTC {
-  width: 180px;
-  height: 360px;
-  background-color: #FF2400;
-  font-size: 50px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+.middle {
+  width: 600px;
+  float: left;
 }
-.botTC {
-  width: 180px;
-  height: 360px;
+.side{
+  width: 200px;
+  height: 600px;
   background-color: #FF2400;
-  font-size: 50px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
+  border: 10px; solid: #000000;
+  float: left;
+}
+.back {
+  width: 600px;
+  height: 100px;
+  background-color: #FF2400;
+  border: 10px; solid: #000000;
+  float: left;
+}
+.square {
+  width: 300px;
+  height: 500px;
+  background-color: #FF2400;
+  border: 10px; solid: #000000;
+  float: left;
 }
 /*3 Column Grid*/
 .CG {
@@ -107,7 +113,7 @@ body {
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 31%;
   padding: 10px;
   height: 100px;
   background-color:#FF2400;
@@ -232,10 +238,20 @@ body {
 
 <h1>Tennis Court</h1>
 <div class="TC">
-  <div class="topTC">
-  </div>
-  <div class="botTC">
-  </div>
+  <div class="side"></div>
+  <div class="middle">
+    <div class="back"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+</div>
+  <div class="side"></div>
+  <div class="side"></div>
+  <div class="middle">
+    <div class="back"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+</div>
+  <div class="side"></div>
 </div>
 
 <h1>3 Column Grid (with header and footer)</h1>
@@ -251,10 +267,51 @@ body {
 <div class="BL">
   <div></div>
 </div>
+
 <h1>California Case</h1>
-<div class="CC">
-  <div></div>
+<div class="header">
+  <h2>Blog Name</h2>
 </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+</div>
+
 </div>
 
 </body>

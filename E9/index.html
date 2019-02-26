@@ -97,26 +97,26 @@ body {
 }
 /*3 Column Grid*/
 .CG {
-  box-sizing: border-box;
+  width: auto;
   margin: 20px;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #777B7E;
 }
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
-  height: 300px;
+  height: 100px;
   background-color:#FF2400;
 }
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: white;
-}
 .footer {
-  padding: 20px;
+  float: left;
+  padding: 30px;
   text-align: center;
-  background: #ddd;
+  background-color: #777B7E;
   margin-top: 20px;
 }
 </style>
@@ -239,13 +239,13 @@ body {
 </div>
 
 <h1>3 Column Grid (with header and footer)</h1>
+<div class="header"></div>
 <div class="CG">
-  <div class="header"></div>
   <div class="column"></div>
   <div class="column"></div>
   <div class="column"></div>
-  <div class="footer"></div>
 </div>
+<div class="footer"></div>
 
 <h1>Blog Layout (with header)</h1>
 <div class="BL">

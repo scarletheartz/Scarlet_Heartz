@@ -1,82 +1,121 @@
-body
-{
-  background-color: white;
-  background-size: 100%;
-  font-family: "Times New Roman", sans-serif;
+<style >
+  body {
+    font-family: "Times New Roman", sans-serif;
+    text-align: center;
+  }
+  img {
+    width: 1200px;
+  }
+  h1
+  {
+    text-align: left;
+    font-size: 2em;
+    font-style: oblique;
+    color: black;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #777B7E;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #FF2400;
+  }
+
+  .main {
+    text-align: left;
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    color: #FF2400;
+  }
+
+  .main a:hover {
+    color: #FFFFFF;
+    background-color:
+  }
+
+  .main a:visited {
+    color: #FF2400;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .tab {
+    overflow:hidden;
+    border: 1px solid black;
+    background-color: black;
+  }
+  .tab button {
+    background-color: black;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 12px;
+    color: white;
+  }
+  .tab button:hover {
+    background-color: lightblue;
+  }
+  .tab button.active {
+    background-color: lightblue;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .myHeader {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .myPara {
+    text-align: center;
+    font-size: 18px;
+  }
+  .Start {
+    background-color: lightblue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+  .Main {
+    background-color: lightblue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+  .sections {
+  background-color: lightblue;
   color: white;
+  margin: 10px;
+  padding: 10px;
   text-align: center;
-}
-h1
-{
-  text-align: center;
-  font-size: 2em;
-  font-style: oblique;
-  color: Red;
-}
-h2
-{
-  text-align: left;
-  font-size: 1.5em;
-  font-style: Oblique;
-  color:Red
-}
-h3
-{
-  text-align: right;
-  font-size: 1.5em;
-  font-style: Oblique;
-  color:Red
-}
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #777B7E;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #FF2400;
-}
-
-.main {
-  text-align: left;
-  overflow: hidden;
-  color: #000000;
-  margin-left: 250px; /* Same as the width of the sidenav */
-  font-size: 17px; /* Increased text to enable scrolling */
-  border: 20px; solid #FF2400;
-  padding: 0px 10px;
-}
-
-.main a {
-  color: #FF2400;
-}
-
-.main a:hover {
-  color: #FFFFFF;
-  background-color:
-}
-
-.main a:visited {
-  color: #FF2400;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
 }
 .navbar {
   margin-top: 0px;
@@ -140,3 +179,4 @@ h3
 .dropdown:hover .dropdown-content {
   display: block;
 }
+</style>

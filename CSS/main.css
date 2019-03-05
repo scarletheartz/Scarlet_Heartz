@@ -1,6 +1,7 @@
 <style >
-  body
-  {
+  body {
+    font-family: "Lato", sans-serif;
+    text-align: center;
   }
   h1
   {
@@ -8,5 +9,41 @@
     font-size: 2em;
     font-style: oblique;
     color: black;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    text-align: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #777B7E;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: #FF2400;
+  }
+
+  .main {
+    text-align: left;
+    margin-left: 250px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
 </style>

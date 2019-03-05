@@ -1,6 +1,6 @@
 body
 {
-  background-color: black;
+  background-color: white;
   background-size: 100%;
   font-family: "Times New Roman", sans-serif;
   color: white;
@@ -52,11 +52,10 @@ h3
 }
 
 .main {
-  width: 490px;
   text-align: left;
   overflow: hidden;
-  color: #FFFFFF;
-  margin-left: 550px; /* Same as the width of the sidenav */
+  color: #000000;
+  margin-left: 250px; /* Same as the width of the sidenav */
   font-size: 17px; /* Increased text to enable scrolling */
   border: 20px; solid #FF2400;
   padding: 0px 10px;
@@ -83,13 +82,13 @@ h3
   margin-top: 0px;
   margin-left: 250px;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #FFFFFF;
 }
 
 .navbar a {
   float: left;
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -104,7 +103,7 @@ h3
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;

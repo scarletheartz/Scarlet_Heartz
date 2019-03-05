@@ -1,318 +1,196 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="css/E9.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  background-size: 100%;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-}
-
-.sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #777B7E;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #FF2400;
-}
-
-.main {
-  text-align: left;
-  margin-left: 250px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-/* Chessboard */
-.chessboard {
-  width: 640px;
-  height: 640px;
-  margin: 20px;
-}
-.red {
-  float: left;
-  width: 80px;
-  height: 80px;
-  background-color: #FF2400;
-  font-size: 50px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-.white {
-  float: left;
-  width: 80px;
-  height: 80px;
-  background-color: #000000;
-  font-size: 50px;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-/*Tennis Court*/
-.TC {
-width: 1000px;
-border: 10px; solid: #000000;
-}
-.middle {
-  width: 600px;
-  float: left;
-}
-.side{
-  width: 200px;
-  height: 600px;
-  background-color: #FF2400;
-  border: 10px; solid: #000000;
-  float: left;
-}
-.back {
-  width: 600px;
-  height: 100px;
-  background-color: #FF2400;
-  border: 10px; solid: #000000;
-  float: left;
-}
-.square {
-  width: 300px;
-  height: 500px;
-  background-color: #FF2400;
-  border: 10px; solid: #000000;
-  float: left;
-}
-/*3 Column Grid*/
-.CG {
-  width: auto;
-  margin: 20px;
-}
-.header {
-  padding: 30px;
-  text-align: center;
-  background-color: #777B7E;
-}
-.column {
-  float: left;
-  width: 31%;
-  padding: 10px;
-  height: 100px;
-  background-color:#FF2400;
-}
-.footer {
-  float: left;
-  padding: 30px;
-  text-align: center;
-  background-color: #777B7E;
-  margin-top: 20px;
-}
-</style>
-</head>
-<body>
-
-<div class="sidenav">
-  <h1 style="color:white;">Phuong's Assignments</h1>
-  <a href="../index.html">Home</a>
-  <a href="../E0/index.html">Exercise 0</a>
-  <a href="../E1/index.html">Excercise 1</a>
-  <a href="../E2/index.html">Excercise 2</a>
-  <a href="../E3/index.html">Excercise 3</a>
-  <a href="../E4/index.html">Excercise 4</a>
-  <a href="../E5/index.html">Excercise 5</a>
-  <a href="../E6/index.html">Excercise 6</a>
-  <a href="../E7/index.html">Excercise 7</a>
-  <a href="../E8/index.html">Excercise 8</a>
-  <a href="../E9/index.html">Excercise 9</a>
-  <a href="../E10/index.html">Excercise 10</a>
-  <a href="../Scarlet's Heart/HomePageSH.html">Project 1</a>
-  <a href="../E11/index.html">Excercise 11</a>
-  <a href="../E12/index.html">Excercise 12</a>
-  <a href="../E13/index.html">Excercise 13</a>
-  <a href="../E14/index.html">Excercise 14</a>
-  <a href="../E15/index.html">Excercise 15</a>
-  <a href="../">Project 2</a>
-  <a href="../E16/index.html">Excercise 16</a>
-  <a href="../">Project 3</a>
-  <a href="../E17/index.html">Excercise 17</a>
-  <a href="../E18/index.html">Excercise 18</a>
-  <a href="../E19/index.html">Excercise 19</a>
-  <a href="../">Project 4</a>
-  <a href="../">Project 5</a>
-</div>
-
-<div class="main">
-  <h1> Chessboard</h1>
-  <div class="chessboard">
-
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-  <div class="white"></div>
-  <div class="red"></div>
-</div>
-
-<h1>Tennis Court</h1>
-<div class="TC">
-  <div class="side"></div>
-  <div class="middle">
-    <div class="back"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-</div>
-  <div class="side"></div>
-  <div class="side"></div>
-  <div class="middle">
-    <div class="back"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-</div>
-  <div class="side"></div>
-</div>
-
-<h1>3 Column Grid (with header and footer)</h1>
-<div class="header"></div>
-<div class="CG">
-  <div class="column"></div>
-  <div class="column"></div>
-  <div class="column"></div>
-</div>
-<div class="footer"></div>
-
-<h1>Blog Layout (with header)</h1>
-<div class="BL">
-  <div></div>
-</div>
-
-<h1>California Case</h1>
-<div class="header">
-  <h2>Blog Name</h2>
-</div>
-
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Dec 7, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
+  <head>
+    <link rel="stylesheet" href="css/E9.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="sidenav">
+      <h1 style="color:white;">Phuong's Assignments</h1>
+        <a href="../index.html">Home</a>
+        <a href="../E0/index.html">Exercise 0</a>
+        <a href="../E1/index.html">Excercise 1</a>
+        <a href="../E2/index.html">Excercise 2</a>
+        <a href="../E3/index.html">Excercise 3</a>
+        <a href="../E4/index.html">Excercise 4</a>
+        <a href="../E5/index.html">Excercise 5</a>
+        <a href="../E6/index.html">Excercise 6</a>
+        <a href="../E7/index.html">Excercise 7</a>
+        <a href="../E8/index.html">Excercise 8</a>
+        <a href="../E9/index.html">Excercise 9</a>
+        <a href="../E10/index.html">Excercise 10</a>
+        <a href="../Scarlet's Heart/HomePageSH.html">Project 1</a>
+        <a href="../E11/index.html">Excercise 11</a>
+        <a href="../E12/index1.html">Excercise 12</a>
+        <a href="../E13/index.html">Excercise 13</a>
+        <a href="../E14/index.html">Excercise 14</a>
+        <a href="../E15/index.html">Excercise 15</a>
+        <a href="../">Project 2</a>
+        <a href="../E16/index.html">Excercise 16</a>
+        <a href="../">Project 3</a>
+        <a href="../E17/index.html">Excercise 17</a>
+        <a href="../E18/index.html">Excercise 18</a>
+        <a href="../E19/index.html">Excercise 19</a>
+        <a href="../">Project 4</a>
+        <a href="../">Project 5</a>
     </div>
-    <div class="card">
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-    </div>
-  </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div><br>
-      <div class="fakeimg">Image</div>
-    </div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p>Some text..</p>
-    </div>
-  </div>
-</div>
 
-<div class="footer">
-  <h2>Footer</h2>
-</div>
-</div>
+    <div class="main">
+      <h1> Chessboard</h1>
+      <div class="chessboard">
 
-</div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
 
-</body>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="red"></div>
+    </div>
+
+    <h1>Tennis Court</h1>
+    <div class="TC">
+      <div class="side"></div>
+      <div class="middle">
+        <div class="back"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+      <div class="side"></div>
+      <div class="side"></div>
+      <div class="middle">
+        <div class="back"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+      </div>
+        <div class="side"></div>
+      </div>
+
+    <h1>3 Column Grid (with header and footer)</h1>
+    <div class="header"></div>
+    <div class="CG">
+      <div class="column"></div>
+      <div class="column"></div>
+      <div class="column"></div>
+    </div>
+    <div class="footer"></div>
+
+    <h1>Blog Layout (with header)</h1>
+    <div class="BL">
+      <div></div>
+    </div>
+
+    <h1>California Case</h1>
+    <div class="header">
+      <h2>Blog Name</h2>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Dec 7, 2017</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+        </div>
+        <div class="card">
+          <h2>TITLE HEADING</h2>
+          <h5>Title description, Sep 2, 2017</h5>
+          <div class="fakeimg" style="height:200px;">Image</div>
+          <p>Some text..</p>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>About Me</h2>
+          <div class="fakeimg" style="height:100px;">Image</div>
+          <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div><br>
+          <div class="fakeimg">Image</div>
+        </div>
+        <div class="card">
+          <h3>Follow Me</h3>
+          <p>Some text..</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+    </div>
+
+    </div>
+
+  </body>
 </html>

@@ -1,5 +1,6 @@
 <style >
   body {
+    color: #000000;
     font-family: "Times New Roman", sans-serif;
     text-align: center;
   }
@@ -43,7 +44,7 @@
     margin-left: 250px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
-    color: #FF2400;
+    color: #000000;
   }
 
   .main a:hover {

@@ -14,31 +14,43 @@
     font-style: oblique;
     color: black;
   }
-  .sidenav {
+  #sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
     text-align: center;
-    z-index: 1;
-    top: 0;
-    left: 0;
     background-color: #000000;
-    overflow-x: hidden;
-    padding-top: 20px;
+    left: -250px;
+    transition: all 500ms linear;
   }
 
-  .sidenav a {
+  #sidenav a {
+    left: 0px;
     padding: 6px 8px 6px 16px;
+    margin: 0px;
     text-decoration: none;
     font-size: 20px;
     color: #777B7E;
     display: block;
   }
 
-  .sidenav a:hover {
+  #sidenav a:hover {
     color: #FF2400;
   }
 
+  #sidenav .menu {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+  }
+
+  #sidenav .menu span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #FFFFFF;
+    margin: 5px 0px:
+  }
   .main {
     text-align: left;
     margin-left: 250px; /* Same as the width of the sidenav */
@@ -56,7 +68,8 @@
     color: #FF2400;
   }
 
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 450px) {
+    .sidenav {display: none;}
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }

@@ -1,64 +1,190 @@
-<style >
-  body {
+body {
+    font-family: "Palatino Linotype";
     color: #000000;
-    font-family: "Times New Roman", sans-serif;
-    text-align: center;
+    font-size: 1.1em
+    text-align: left;
+    overflow-x: hidden;
   }
+
+  header {
+    border-bottom: 1px solid #FFFFFF;
+    padding: 40px 0;
+  }
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
   img {
     width: 1200px;
   }
+
   h1
   {
-    text-align: left;
-    font-size: 2em;
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+    line-height: 0;
     font-style: oblique;
     color: black;
   }
-  .sidenav {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    text-align: center;
-    z-index: 1;
-    top: 0;
-    left: 0;
+  @media screen and (min-width: 900px) {
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+    }
+  }
+
+  h1 span {
+    display: none;
+  }
+
+  @media screen and (min-width: 900px) {
+    h1 span {
+      display: inline;
+      font-size: .6em;
+      color: #000000;
+    }
+  }
+
+  article {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 1em 0 0;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+/* Nav icon positioning */
+
+  .position {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    transition: all .3s ease;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 900px) {
+    .position {
+      position: fixed;
+    }
+  }
+
+  #nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
     background-color: #000000;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #777B7E;
+    position: absolute;
     display: block;
+    content: '';
   }
 
-  .sidenav a:hover {
-    color: #FF2400;
+  #nav-toggle span:before {
+    top: -10px;
   }
 
-  .main {
+  #nav-toggle span:before {
+  bottom: -10px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    transition: all 200ms ease-in-out;
+  }
+
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+  #nav-toggle.active span:before,
+  #nav-toggle.active span:after {
+    top: 0;
+  }
+
+  #nav-togle.active span: before {
+    transform: rotate(45deg);
+  }
+
+  #nav-togle.active span:after {
+    transform: rotate(-45deg);
+  }
+
+/* Off Canvas Navigation */
+
+  main {
+    width: 100%
+    position: absolute;
+    left: 0;
     text-align: left;
     margin-left: 250px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
     padding: 0px 10px;
     color: #000000;
+    transition: .3s ease all;
   }
 
-  .main a:hover {
+  main a:hover {
     color: #FFFFFF;
     background-color:
   }
 
-  .main a:visited {
+  main a:visited {
     color: #FF2400;
   }
 
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  aside {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #FFFFFF;
+    font-size: .8em;
+    font-family: sans-serif;
+    font-weight: 300;
+    transition: all .3s ease;
+  }
+  aside p {
+    color: #000000;
+    padding: 20px;
+  }
+
+  aside nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  aside nav ul li:first-of-type {
+    border-top: 1px solid #FFFFFF;
+  }
+  asidenav ul li {
+    border-bottom: 1px solid #FFFFFF;
+  }
+  aside nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+  }
+  aside nav ul li a:hover {
+    background: #48494B;
   }
   .tab {
     overflow:hidden;

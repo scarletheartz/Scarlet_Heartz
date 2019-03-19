@@ -186,6 +186,32 @@ body {
   aside nav ul li a:hover {
     background: #48494B;
   }
+
+  /* Javascript toggle */
+
+  .show-nav aside,
+  .show-nav .position,
+  .show-nav main {
+    transform: translateX(250px);
+  }
+  .show-nav .position {
+    position: fixed;
+  }
+
+  .show-nav article {
+    padding: 0 80px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FF2400;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #FF2400;
+    background-color: #48494B;
+  }
   .tab {
     overflow:hidden;
     border: 1px solid black;

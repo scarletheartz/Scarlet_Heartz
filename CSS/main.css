@@ -5,6 +5,8 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     overflow-x: hidden;
+    background-image: url("../background.png");
+    background-size: 100%;
   }
 
   header {
@@ -18,13 +20,9 @@ body {
     padding: 0 20px;
   }
 
-  img {
-    width: 1200px;
-  }
-
   h1 {
-    text-align: center;
     font-size: 1em;
+    text-align: center;
     margin: 0;
     line-height: 0;
   }
@@ -32,7 +30,7 @@ body {
   @media screen and (min-width: 900px) {
     h1 {
       font-size: 1.4em;
-      text-align: left;
+      text-align: center;
     }
   }
 
@@ -55,8 +53,28 @@ body {
   }
 
   h2 {
-    font-size: 1.5em;
-    margin: 1em 0 0;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 900px) {
+    h2 {
+      font-size: 1.4em;
+      text-align: center;
+    }
+  }
+
+  h2 span {
+    display: none;
+  }
+
+  @media screen and (min-width: 900px) {
+    h2 span {
+      display: inline;
+      font-size: .6em;
+      color: #000000;
+    }
   }
 
   dt {
@@ -64,6 +82,7 @@ body {
   }
 
   time {
+    text-align: center;
     font-size: .9em;
     color: #000000;
     display: block;
@@ -99,7 +118,7 @@ body {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: #000000;
+    background: #FFFFFF;
     position: absolute;
     display: block;
     content: '';
@@ -145,24 +164,16 @@ body {
     transition: .3s ease all;
   }
 
-  main a:hover {
-    color: #FFFFFF;
-    background-color: #48494B;
-  }
-
-  main a:visited {
-    color: #FF2400;
-  }
-
   aside {
     width: 250px;
     height: 100%;
     position: fixed;
     top: 0;
     left: -250px;
-    background: #FFFFFF;
+    overflow-y: scroll;
+    background: #000000;
     font-size: .8em;
-    font-family: sans-serif;
+    font-family: "Palatino Linotype" sans-serif;
     font-weight: 300;
     transition: all .3s ease;
   }
@@ -188,7 +199,7 @@ body {
   aside nav ul li a {
     padding: 10px 20px;
     display: block;
-    color: #000000;
+    color: #FFFFFF;
     text-decoration: none;
   }
 

@@ -3,7 +3,11 @@
   <head>
     <title> Phuong's Assignments</title>
     <link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <script>
+      let d = new Date();
+      document.body.innerHTML = "<time>Today's date is " + d + "<time>"
+    </script>
       <style>
         body {
           background-image: url("background.png");
@@ -13,7 +17,7 @@
   </head>
   <body>
     <aside>
-      <p style="color:white;text-align:center;">Phuong's Assignments</p>
+      <h1>Phuong's Assignments</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -58,25 +62,6 @@
         <p>
     </article>
   </main>
-
-  <script>
-  (function($) {
-    $(function() { // DOM Ready
-
-      // Toggle navigation
-      $('#nav-toggle').click(function() {
-        this.classList.toggle("active");
-        // If sidebar is visible:
-        if ($('body').hasClass('show-nav')) {
-          // Hide sidebar
-          $('body').removeClass('show-nav');
-        } else { // If sidebar is hidden:
-          $('body').addClass('show-nav');
-          // Display sidebar
-        }
-      });
-    });
-  })(jQuery);
-  </script>
   </body>
+  <script src="js/script.js"></script>
 </html>

@@ -13,7 +13,7 @@
   </head>
   <body>
     <aside>
-      <h1 style="color:white;text-align:center;">Phuong's Assignments</h1>
+      <p style="color:white;text-align:center;">Phuong's Assignments</p>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -45,10 +45,38 @@
       </ul>
     </nav>
   </aside>
-    <div class="main">
-      <h1>Phuong Le</h1>
-      <h1>AVT 217.001</h1>
-    </div>
+  <a id="nav-toggle" href="#!" class="position"><span></span></a>
+  <main>
+    <header>
+      <div class="container">
+        <h1>Phuong's Assignments</h1>
+      </div>
+    </header>
+    <article>
+      <h2>Phuong Le</h2>
+      <time>January 22, 2019</time>
+        <p>
+    </article>
+  </main>
 
+  <script>
+  (function($) {
+    $(function() { // DOM Ready
+
+      // Toggle navigation
+      $('#nav-toggle').click(function() {
+        this.classList.toggle("active");
+        // If sidebar is visible:
+        if ($('body').hasClass('show-nav')) {
+          // Hide sidebar
+          $('body').removeClass('show-nav');
+        } else { // If sidebar is hidden:
+          $('body').addClass('show-nav');
+          // Display sidebar
+        }
+      });
+    });
+  })(jQuery);
+  </script>
   </body>
 </html>

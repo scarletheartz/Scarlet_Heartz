@@ -88,6 +88,34 @@ body {
     display: block;
   }
 
+  img {
+    width: 600px;
+    text-align: center;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 900px) {
+    img {
+      width: 800px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  img span {
+    width: 300px;
+    display: none;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 900px) {
+    img span {
+      width: 150px;
+      color: #000000;
+      align-items: center;
+    }
+  }
+
 /* Nav icon positioning */
 
   .position {

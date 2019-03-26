@@ -5,8 +5,7 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: url("../background.png");
-    background-size: 100%;
+    background-color: #000000;
   }
 
   header {

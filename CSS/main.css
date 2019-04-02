@@ -22,7 +22,8 @@ body {
   h1 {
     font-size: 1em;
     text-align: center;
-    margin: 0;
+    margin-top: 0 auto;
+    padding-top: 0 20px;
     line-height: 0;
   }
 
@@ -216,11 +217,11 @@ body {
   }
 
   aside nav ul li:first-of-type {
-    border-top: 1px solid #FFFFFF;
+    border-top: 0px solid #FFFFFF;
   }
 
   aside nav ul li {
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 0px solid #FFFFFF;
   }
 
   aside nav ul li a {
@@ -231,7 +232,8 @@ body {
   }
 
   aside nav ul li a:hover {
-    background: #48494B;
+    background: #48494B
+    color: #800000;
   }
 
   /* Javascript toggle */

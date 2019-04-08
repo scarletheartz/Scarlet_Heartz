@@ -29,8 +29,19 @@ body {
     color: #FFFFFF;
   }
 
+  h2 {
+    font-size: 1em;
+    color: #000000;
+    text-align: center;
+    margin: 0;
+  }
+
   @media screen and (min-width: 900px) {
     h1 {
+      font-size: 1.4em;
+      text-align: center;
+    }
+    h2 {
       font-size: 1.4em;
       text-align: center;
     }
@@ -40,8 +51,17 @@ body {
     display: none;
   }
 
+  h2 span {
+    display: none;
+  }
+
   @media screen and (min-width: 900px) {
     h1 span {
+      display: inline;
+      font-size: .6em;
+      color: #000000;
+    }
+    h2 span {
       display: inline;
       font-size: .6em;
       color: #000000;
@@ -53,32 +73,6 @@ body {
     margin: 0 auto;
     margin-left: 150px;
     padding: 0 20px;
-  }
-
-  h2 {
-    font-size: 1em;
-    color: #000000;
-    text-align: center;
-    margin: 0;
-  }
-
-  @media screen and (min-width: 900px) {
-    h2 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-  }
-
-  h2 span {
-    display: none;
-  }
-
-  @media screen and (min-width: 900px) {
-    h2 span {
-      display: inline;
-      font-size: .6em;
-      color: #000000;
-    }
   }
 
   dt {

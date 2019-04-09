@@ -30,106 +30,17 @@ body {
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 25pt;
     color: #FFFFFF;
     text-align: center;
     margin: 0;
   }
 
-  @media screen and (min-width: 600px) {
-    main {
-      background-color: #800000;
-      width: 80vw;
-    }
-    h1 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-    h2 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-  }
-
-  @media screen and (min-width: 900px) {
-    h1 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-    h2 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    h1 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-    h2 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    h1 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-    h2 {
-      font-size: 1.4em;
-      text-align: center;
-    }
-  }
-
-  article {
-    max-width: 750px;
-    margin: 0 auto;
-    margin-left: 150px;
-    padding: 0 20px;
+  h3 {
+    font-size: 20pt;
     color: #FFFFFF;
-  }
-
-
-  dt {
-    font-weight: bold;
-  }
-
-  time {
     text-align: center;
-    font-size: .9em;
-    color: #FFFFFF;
-    display: block;
-  }
-
-  img {
-    width: 600px;
-    text-align: center;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 900px) {
-    img {
-      width: 800px;
-      text-align: center;
-      align-items: center;
-    }
-  }
-
-  img span {
-    width: 300px;
-    display: none;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 900px) {
-    img span {
-      width: 150px;
-      color: #000000;
-      align-items: center;
-    }
+    margin: 0;
   }
 
 /* Nav icon positioning */

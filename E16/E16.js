@@ -1,6 +1,5 @@
 (function($) {
   $(function() { // DOM Ready
-
     // Toggle navigation
     $('#nav-toggle').click(function() {
       this.classList.toggle("active");
@@ -14,9 +13,11 @@
       }
     });
   });
-  $(document).ready(function(){
-    $("p").click(function(){
-      $(this).hide();
-    });
+  $(document).ready(function() {
+  $('h2').click(function() {
+    var div =$("div");
+    $('div').animate({
+      height: '100px'}, "slow");
   });
+});
 })(jQuery);

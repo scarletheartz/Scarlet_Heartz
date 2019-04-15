@@ -30,11 +30,11 @@ body {
   }
 
   h2 {
-    font-size: 5em;
+    font-size: 35pt;
     margin: 0;
     padding: 40vh 0 0 0;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Palatino Linotype', sans-serif;
     text-transform: uppercase;
     letter-spacing: .1em;
     font-weight: bold;
@@ -42,22 +42,49 @@ body {
   }
 
   h3 {
-    font-size: 20pt;
+    font-size: 10pt;
     color: #FFFFFF;
     text-align: center;
     margin: 0;
   }
 
   .full {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 500px;
+    margin-left: 0px;
+    position: relative;
   }
-  #list-name {
-    background-color: #48494B;
+
+  button {
+    background-color: #890A00;
+    color: #FFFFFF;
+    transition: all 2s ease
   }
 
   #song-1 {
+    background-color: #A91101;
+    color: #FFFFFF;
+    transition: all 2s ease
+  }
+  #song-2 {
+    background-color: #B31B1B;
+    color: #FFFFFF;
+    transition: all 2s ease
+  }
+  #song-3 {
+    background-color: #DD1219;
+    color: #FFFFFF;
+    transition: all 2s ease
+  }
+  #song-4 {
+    background-color: #E62020;
+    color: #FFFFFF;
+    transition: all 2s ease
+  }
+  #song-5 {
     background-color: #FF2400;
+    color: #FFFFFF;
+    transition: all 2s ease
   }
 
   span {

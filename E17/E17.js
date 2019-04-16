@@ -17,7 +17,13 @@ $(document).ready(function() {
     // run function on initial page load
     colorGuess();
 });
-
 function colorGuess() {
     var colorArray = ["Black","Green","LightBlue","LightGrey","NavyBlue","NeonYellow","Pink","Red","RobinBlue","SkyBlue","White","WineRed"];
+
+function changeImage()
+{
+  var img = document.getELemendById("image");
+  image.src="images/test2";
+  return false;
+}
 })(jQuery);

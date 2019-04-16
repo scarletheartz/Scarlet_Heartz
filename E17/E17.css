@@ -55,7 +55,7 @@ body {
     position: relative;
   }
 
-  button {
+  #button {
     background-color: #FFFFFF;
     color: #000000;
     border-color: #FFFFFF;
@@ -64,31 +64,9 @@ body {
     transition: all 2s ease
   }
 
-  #song-1 {
-    background-color: #A91101;
-    color: #FFFFFF;
-    transition: all 2s ease
-  }
-  #song-2 {
-    background-color: #B31B1B;
-    color: #FFFFFF;
-    transition: all 2s ease
-  }
-  #song-3 {
-    background-color: #DD1219;
-    color: #FFFFFF;
-    transition: all 2s ease
-  }
-  #song-4 {
-    background-color: #E62020;
-    color: #FFFFFF;
-    transition: all 2s ease
-  }
-  #song-5 {
-    background-color: #FF2400;
-    color: #FFFFFF;
-    transition: all 2s ease
-  }
+  #submission {
+    text-align: center;
+    }
 
   span {
     transition: all 2s ease;

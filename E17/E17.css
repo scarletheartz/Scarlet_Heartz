@@ -59,8 +59,9 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     border-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
     transition: all 2s ease
-    
   }
 
   #song-1 {

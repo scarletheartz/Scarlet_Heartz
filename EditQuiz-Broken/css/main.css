@@ -110,7 +110,7 @@ body {
   font-family: 'Fira Sans', sans-serif;
   margin: 12px 0;
 }
-.hide {
+.caption hide {
   display: none;
 }
 .text {

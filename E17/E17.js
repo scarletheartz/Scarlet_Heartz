@@ -1,8 +1,9 @@
-$(document).ready(function() {
+$("document").ready(function() {
     // run function on initial page load
     colorGuess();
 });
-(function colorGuess() {
+
+function colorGuess() {
     //color variable
     var colorArray = ["Black","Green","LightBlue","LightGrey","NavyBlue","NeonYellow","Pink","Red","RobinBlue","SkyBlue","White","WineRed"];
     //image link variable

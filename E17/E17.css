@@ -1,0 +1,251 @@
+html,
+body {
+    font-family: "Palatino Linotype";
+    color: #FFFFFF;
+    font-size: 1.1em;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #000000;
+  }
+
+  header {
+    border-bottom: 1px solid #000000;
+    padding: 40px 0;
+    background-color: #000000;
+  }
+
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  #container {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+}
+
+  h1 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 0 auto;
+    padding-top: 0 20px;
+    line-height: 0;
+    color: #FFFFFF;
+  }
+
+  h2 {
+    font-size: 35pt;
+    margin: 0;
+    padding: 40vh 0 0 0;
+    text-align: center;
+    font-family: 'Palatino Linotype', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    transition: all 2s ease;
+  }
+
+  h3 {
+    font-size: 10pt;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+  }
+
+  .full {
+    width: 100%;
+    height: 500px;
+    margin-left: 0px;
+    position: relative;
+  }
+  input {
+    text-align: center;
+  }
+  .button {
+      margin-top: 0 auto;
+      padding-top: 0 20px;
+      line-height: 0;
+      width: 150px;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+      margin: 50px auto;
+  }
+  .button:hover {
+      cursor: pointer;
+  }
+  .button p {
+      text-align: center;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: bold;
+  }
+
+  #button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s ease
+  }
+
+  #submission {
+    text-align: center;
+    }
+
+    span {
+      transition: all 2s ease;
+      cursor: pointer;
+    }
+
+/* Nav icon positioning */
+
+  .position {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    transition: all .3s ease;
+    z-index: 2;
+  }
+
+  @media screen and (min-width: 900px) {
+    .position {
+      position: fixed;
+    }
+  }
+
+/* Navigation */
+
+  #nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #FFFFFF;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+
+  #nav-toggle span:before {
+    top: -10px;
+  }
+
+  #nav-toggle span:after {
+    bottom: -10px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    transition: all 200ms ease-in-out;
+  }
+
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+
+  #nav-toggle.active span:before,
+  #nav-toggle.active span:after {
+    top: 0;
+  }
+
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+  }
+
+/* Off Canvas Navigation */
+
+  main {
+    background-color: #000000;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: .3s ease all;
+  }
+
+  aside {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    overflow-y: scroll;
+    background: #000000;
+    font-size: .8em;
+    font-family: "Palatino Linotype" sans-serif;
+    font-weight: 300;
+    transition: all .3s ease;
+  }
+
+  aside p {
+    color: #000000;
+    padding: 20px;
+  }
+
+  aside nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  aside nav ul li:first-of-type {
+    border-top: 0px solid #FFFFFF;
+  }
+
+  aside nav ul li {
+    border-bottom: 0px solid #FFFFFF;
+  }
+
+  aside nav ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #FF2400;
+    text-decoration: none;
+  }
+
+  aside nav ul li a:hover {
+    background: #48494B
+    color: #800000;
+  }
+
+  /* Javascript toggle */
+
+  .show-nav aside,
+  .show-nav .position,
+  .show-nav main {
+    transform: translateX(250px);
+  }
+
+  .show-nav .position {
+    position: fixed;
+  }
+
+  .show-nav article {
+    padding: 0 80px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FF2400;
+  }
+
+  a:hover {
+    text-decoration: underline 2px;
+    color: #FF2400;
+    background-color: #48494B;
+  }

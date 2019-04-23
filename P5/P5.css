@@ -1,4 +1,8 @@
 html,
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Palatino Linotype";
     color: #FFFFFF;
@@ -14,14 +18,15 @@ body {
     background-color: #000000;
   }
 
+  .header {
+  text-align: center;
+  padding: 32px;
+}
+
   .container {
     max-width: 750px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-
-  .square {
-      
   }
 
   h1 {
@@ -61,39 +66,24 @@ body {
   input {
     text-align: center;
   }
-  .button {
-      margin-top: 0 auto;
-      padding-top: 0 20px;
-      line-height: 0;
-      width: 150px;
-      background-color: black;
-      color: white;
-      border-radius: 5px;
-      margin: 50px auto;
-  }
-  .button:hover {
-      cursor: pointer;
-  }
-  .button p {
-      text-align: center;
-      font-family: sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: bold;
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 18px;
   }
 
-  #button {
-    background-color: #FFFFFF;
-    color: #000000;
-    border-color: #FFFFFF;
-    align-items: center;
-    justify-content: center;
-    transition: all 2s ease
+  .btn:hover {
+    background-color: #ddd;
   }
 
-  #submission {
-    text-align: center;
-    }
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
 
     span {
       transition: all 2s ease;
@@ -246,4 +236,25 @@ body {
     text-decoration: underline 2px;
     color: #FF2400;
     background-color: #48494B;
+  }
+
+  img {
+    width: 9.7%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 100%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
   }
